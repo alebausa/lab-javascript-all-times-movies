@@ -41,7 +41,7 @@ The `src/data.js` contains an array of 250 movies, each of them with all the inf
   "director":"Frank Darabont",
   "duration":"2h 22min",
   "genre":["Crime","Drama"],
-  "rate":"9.3"
+  "rate":9.3
 }
 ```
 
@@ -59,7 +59,11 @@ You have to work on the `src/movies.js` file.
 
 Ohh yes! We have our beloved tests, and you already know how this works. Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read really carefully the instructions to understand what you have to do.
 
-### Iteration 1: Time Format
+### Order to solve iterations
+
+This is the best order: I2 > I3 > I5 > I6 > I1 > I4 > Bonus
+
+### Iteration 1: Time Format (Longest iteration)
 
 We get the info from the **IMDB** web page, but the duration info was saved in a format that difficult us a lot to compare movies.
 
@@ -76,7 +80,7 @@ Finding the longest movie is almost impossible using that format, so let's chang
   "director":"Frank Darabont",
   "duration":"2h 22min",
   "genre":["Crime","Drama"],
-  "rate":"9.3"
+  "rate":9.3
 }
 ```
 
@@ -89,7 +93,7 @@ Should be:
   "director":"Frank Darabont",
   "duration":"142",
   "genre":["Crime","Drama"],
-  "rate":"9.3"
+  "rate":9.3
 }
 ```
  
@@ -132,7 +136,7 @@ Go ahead and create a `howManyMovies` method that receives an array as a paramet
 
 Another famous way to order the movies is to sort them alphabetically using the `title` key. But in this case we only need to print the title of the first 20. Easy Peasy for an expert like you :wink:
 
-Create a `orderAlphabetically` method, that receive an array and return an array of first 20 titles, alphabetically ordered. Return only the title of each movie, and if the array you receive have less than 20 movies, return all of them order
+Create a `orderAlphabetically` method, that receive an array and return an array of first 20 titles, alphabetically ordered. Return only the title of each movie, and if the array you receive have less than 20 movies, return all of them in order
 
 ### BONUS Iteration: Best yearly rate average 
 
